@@ -7,18 +7,48 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		898869AD2B77D47800968652 /* CreateProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898869AC2B77D47800968652 /* CreateProductView.swift */; };
+		898869B02B77EE5800968652 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898869AF2B77EE5800968652 /* Product.swift */; };
+		898869B22B77F5D900968652 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898869B12B77F5D900968652 /* Category.swift */; };
 		898E2D812B76F99A001AE26F /* iGroceryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898E2D802B76F99A001AE26F /* iGroceryApp.swift */; };
 		898E2D832B76F99A001AE26F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898E2D822B76F99A001AE26F /* ContentView.swift */; };
 		898E2D852B76F99C001AE26F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 898E2D842B76F99C001AE26F /* Assets.xcassets */; };
 		898E2D882B76F99C001AE26F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 898E2D872B76F99C001AE26F /* Preview Assets.xcassets */; };
+		898E2D8F2B76FF98001AE26F /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898E2D8E2B76FF98001AE26F /* Shop.swift */; };
+		898E2D912B770035001AE26F /* ShopItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898E2D902B770035001AE26F /* ShopItem.swift */; };
+		898E2D932B77033C001AE26F /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898E2D922B77033C001AE26F /* Data.swift */; };
+		898E2D952B770664001AE26F /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898E2D942B770664001AE26F /* Cart.swift */; };
+		898E2D982B77BEAA001AE26F /* AuthWithApple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898E2D972B77BEAA001AE26F /* AuthWithApple.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		898E2DAE2B77CE01001AE26F /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		898869AC2B77D47800968652 /* CreateProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProductView.swift; sourceTree = "<group>"; };
+		898869AF2B77EE5800968652 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		898869B12B77F5D900968652 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		898E2D7D2B76F99A001AE26F /* iGrocery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iGrocery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		898E2D802B76F99A001AE26F /* iGroceryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iGroceryApp.swift; sourceTree = "<group>"; };
 		898E2D822B76F99A001AE26F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		898E2D842B76F99C001AE26F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		898E2D872B76F99C001AE26F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		898E2D8E2B76FF98001AE26F /* Shop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shop.swift; sourceTree = "<group>"; };
+		898E2D902B770035001AE26F /* ShopItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopItem.swift; sourceTree = "<group>"; };
+		898E2D922B77033C001AE26F /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		898E2D942B770664001AE26F /* Cart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
+		898E2D972B77BEAA001AE26F /* AuthWithApple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthWithApple.swift; sourceTree = "<group>"; };
+		898E2D9F2B77CE01001AE26F /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = System/Library/Frameworks/AuthenticationServices.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,10 +62,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		898869AA2B77D3A600968652 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		898869AB2B77D3B100968652 /* ProductRegister */ = {
+			isa = PBXGroup;
+			children = (
+				898869AC2B77D47800968652 /* CreateProductView.swift */,
+			);
+			path = ProductRegister;
+			sourceTree = "<group>";
+		};
+		898869AE2B77EE4600968652 /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				898869AF2B77EE5800968652 /* Product.swift */,
+				898869B12B77F5D900968652 /* Category.swift */,
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
 		898E2D742B76F99A001AE26F = {
 			isa = PBXGroup;
 			children = (
 				898E2D7F2B76F99A001AE26F /* iGrocery */,
+				898E2D9E2B77CE01001AE26F /* Frameworks */,
 				898E2D7E2B76F99A001AE26F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,10 +106,18 @@
 		898E2D7F2B76F99A001AE26F /* iGrocery */ = {
 			isa = PBXGroup;
 			children = (
+				898869AE2B77EE4600968652 /* Product */,
+				898869AB2B77D3B100968652 /* ProductRegister */,
+				898869AA2B77D3A600968652 /* Account */,
+				898E2D962B77BE7A001AE26F /* Auth */,
 				898E2D802B76F99A001AE26F /* iGroceryApp.swift */,
 				898E2D822B76F99A001AE26F /* ContentView.swift */,
 				898E2D842B76F99C001AE26F /* Assets.xcassets */,
 				898E2D862B76F99C001AE26F /* Preview Content */,
+				898E2D8E2B76FF98001AE26F /* Shop.swift */,
+				898E2D902B770035001AE26F /* ShopItem.swift */,
+				898E2D922B77033C001AE26F /* Data.swift */,
+				898E2D942B770664001AE26F /* Cart.swift */,
 			);
 			path = iGrocery;
 			sourceTree = "<group>";
@@ -67,6 +130,22 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		898E2D962B77BE7A001AE26F /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				898E2D972B77BEAA001AE26F /* AuthWithApple.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		898E2D9E2B77CE01001AE26F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				898E2D9F2B77CE01001AE26F /* AuthenticationServices.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,6 +156,7 @@
 				898E2D792B76F99A001AE26F /* Sources */,
 				898E2D7A2B76F99A001AE26F /* Frameworks */,
 				898E2D7B2B76F99A001AE26F /* Resources */,
+				898E2DAE2B77CE01001AE26F /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
@@ -137,7 +217,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				898E2D8F2B76FF98001AE26F /* Shop.swift in Sources */,
+				898869B22B77F5D900968652 /* Category.swift in Sources */,
+				898E2D952B770664001AE26F /* Cart.swift in Sources */,
+				898869B02B77EE5800968652 /* Product.swift in Sources */,
+				898869AD2B77D47800968652 /* CreateProductView.swift in Sources */,
+				898E2D932B77033C001AE26F /* Data.swift in Sources */,
 				898E2D832B76F99A001AE26F /* ContentView.swift in Sources */,
+				898E2D982B77BEAA001AE26F /* AuthWithApple.swift in Sources */,
+				898E2D912B770035001AE26F /* ShopItem.swift in Sources */,
 				898E2D812B76F99A001AE26F /* iGroceryApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,14 +355,17 @@
 		898E2D8C2B76F99C001AE26F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"iGrocery/Preview Content\"";
 				DEVELOPMENT_TEAM = 454BN83GGX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -287,6 +378,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = yan.iGrocery;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -296,14 +388,17 @@
 		898E2D8D2B76F99C001AE26F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"iGrocery/Preview Content\"";
 				DEVELOPMENT_TEAM = 454BN83GGX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -316,6 +411,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = yan.iGrocery;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
